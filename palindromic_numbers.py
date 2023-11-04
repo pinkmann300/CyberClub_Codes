@@ -21,6 +21,5 @@ def palindrome_check(base):
         else:
             continue
         
-
-
+        
 palindrome_check(16)
