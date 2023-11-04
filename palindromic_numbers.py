@@ -12,13 +12,15 @@ def base_converter(number, base):
 
 
 def palindrome_check(base):
-    for i in range(0,300):
+    for i in range(1,300):
         if base_converter(i ** 2, base) ==  (base_converter(i ** 2, base)[::-1]):
             finstr = ""
-            for i in range(0,len(base_converter(i ** 2, base))):
-                finstr += base_converter(i ** 2, base)[i]
+            for k in range(0,len(base_converter(i ** 2, base))):
+                finstr = finstr + (base_converter(i ** 2, base)[k])
+            print(i," ", finstr)
         else:
-            continue 
+            continue
+        
 
 
-palindrome_check(10)
+palindrome_check(16)
